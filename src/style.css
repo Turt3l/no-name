@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+}
+.HeaderContainer {
+    height: 8vh;
+    display: flex;
+    width: 100vw;
+    background-color: red;
+    align-items: center;
+    font-family: 'Poppins';
+    font-size: 2vw;
+    color: white;
+}
+.HeaderMainName {
+    width: 25%;
+    justify-content: center;
+    text-align: center;
+}
+.HeaderLinkContainer {
+    width: 10%;
+}
+.HeaderLinks {
+    display: flex;
+}
+.LogoContainer {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    margin: 0 5px;
+}
+.ContactButtonContainer {
+    width: 30%;
+    
+}
