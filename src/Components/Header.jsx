@@ -18,6 +18,9 @@ export default function Header() {
                         </div>    
                     </div>
                 </div>
+                <div className="ContactButton">
+                    Contact me
+                </div>
             </div>
         </div>
     )

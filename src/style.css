@@ -4,25 +4,26 @@ body {
     padding: 0;
 }
 .HeaderContainer {
-    height: 8vh;
+    height: 6vw;
     display: flex;
     width: 100vw;
-    background-color: red;
+    background-color: black;
     align-items: center;
     font-family: 'Poppins';
-    font-size: 2vw;
+    font-size: 40px;
     color: white;
 }
 .HeaderMainName {
-    width: 25%;
+    width: 65%;
     justify-content: center;
-    text-align: center;
+    padding: 0 5vw;
 }
 .HeaderLinkContainer {
     width: 10%;
 }
 .HeaderLinks {
     display: flex;
+    justify-content: center;
 }
 .LogoContainer {
     width: 30px;
@@ -32,5 +33,10 @@ body {
 }
 .ContactButtonContainer {
     width: 30%;
-    
+}
+.ContactButton {
+    background-color: rgb(145, 145, 145);
+    color: white;
+    padding: 20px 22px;
+    font-size: 20px;
 }
