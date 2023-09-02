@@ -1,5 +1,7 @@
-import "../../style.css"
-import background from "../../Media/background.svg"
+import React from "react";
+import Accordion from "./Accordion";
+import "../../style.css";
+import background from "../../Media/background.svg";
 
 export default function ContactsPage() {
     return (
@@ -13,11 +15,23 @@ export default function ContactsPage() {
             </div>
             <div className="contactInformation">
                 <div className="accordionDropdown">
+                    <div className="accordion">
+                        <h2>Frequently asked questions(FaQ)</h2>
+                        <Accordion title="Section 1" content="Content for section 1"/>
+                        <Accordion title="Section 1" content="Content for section 1"/>
+                    </div>
+                    <div className="phoneEmail">
+                        <div className="phoneDiv">
 
+                        </div>
+                        <div className="emailDiv">
+
+                        </div>
+                    </div>
                 </div>
                 <div className="onlineForm">
-                    <h2>Our online form</h2>
                     <form id="onlineForm" action="">
+                    <h2>Our online form</h2>
                         <input type="text" id="persInf" className="name" placeholder="name"/><br></br>
                         <input type="text" id="persInf" className="email" placeholder="email"/><br></br>
                         <textarea name="message" id="persInf" className="message" placeholder="your message" cols="30" rows="10"></textarea>
