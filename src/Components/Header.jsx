@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 export default function Header() {
+
     return(
         <div className="Header">
             <div className="HeaderContainer">
@@ -18,9 +20,9 @@ export default function Header() {
                         </div>    
                     </div>
                 </div>
-                <div className="ContactButton">
+                <Link to={"/contacts"} className="ContactButton">
                     Contact Us
-                </div>
+                </Link>
             </div>
         </div>
     )

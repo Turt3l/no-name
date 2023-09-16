@@ -46,6 +46,11 @@ body {
     color: white;
     padding: 20px 22px;
     font-size: 20px;
+    text-decoration: none;
+}
+.ContactButton:hover {
+    background-color: rgb(122, 122, 122);
+    cursor: pointer;
 }
 
 
@@ -81,9 +86,8 @@ h1, h2 {
 }
 
 #contactsBackground {
-    width: 100%;
-    /* position: relative; */
     display: flex;
+    object-fit: cover;
 }
 
 .mainTextDiv {    

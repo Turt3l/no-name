@@ -8,8 +8,8 @@ import {
 function App() {
   return (
     <div className="App">
-      <Header />
       <BrowserRouter>
+      <Header />
         <Routes>
           <Route path="/contacts" element={<ContactsPage/>} />
         </Routes>
