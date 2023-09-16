@@ -1,5 +1,5 @@
 import "../../style.css"
-import background from "../../Media/background.svg"
+import background from "../../Media/background.png"
 
 export default function ContactsPage() {
     return (

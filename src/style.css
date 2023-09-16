@@ -12,11 +12,13 @@ body {
     height: 6vw;
     display: flex;
     width: 100vw;
-    background-color: red;
+    background-color: transparent;
     align-items: center;
     font-family: 'Poppins';
     font-size: 40px;
     color: white;
+    position: absolute;
+    z-index: 1000;
 }
 .HeaderMainName {
     width: 65%;

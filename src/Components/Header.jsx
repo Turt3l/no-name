@@ -19,7 +19,7 @@ export default function Header() {
                     </div>
                 </div>
                 <div className="ContactButton">
-                    Contact me
+                    Contact Us
                 </div>
             </div>
         </div>
