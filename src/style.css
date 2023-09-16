@@ -51,6 +51,13 @@ body {
     cursor: pointer;
 }
 
+.languageSelector {
+    margin-left: 2vh;
+    font-size: 3vh;
+    font-weight: 600;
+    font-family: 'Poppins';
+}
+
 .ContactButtonContainer {
     width: 30%;
 }

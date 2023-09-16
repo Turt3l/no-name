@@ -26,6 +26,9 @@ export default function Header() {
                 <Link to={"/contacts"} className="ContactButton">
                     Contact Us
                 </Link>
+                <div className="languageSelector">
+                    <p>lv</p>
+                </div>
             </div>
         </div>
     )
