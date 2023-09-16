@@ -4,7 +4,6 @@ body {
     padding: 0;
 
     overflow-x: hidden;
-    width: max-content;
     
     font-family: 'Poppins';
 }
@@ -35,9 +34,23 @@ body {
 .LogoContainer {
     width: 30px;
     height: 30px;
-    background-color: white;
     margin: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+#socialLogo {
+    filter: invert(100%) sepia(4%) saturate(105%) hue-rotate(31deg) brightness(115%) contrast(100%);
+    width: 25px;
+    transition: 250ms ease-in-out;
+}
+
+#socialLogo:hover {
+    filter: invert(64%) sepia(0%) saturate(7135%) hue-rotate(19deg) brightness(93%) contrast(89%);
+    cursor: pointer;
+}
+
 .ContactButtonContainer {
     width: 30%;
 }
@@ -54,6 +67,8 @@ body {
 }
 
 
+
+
 /* Contacts page */
 
 h1, h2 {
@@ -63,7 +78,6 @@ h1, h2 {
 
 .ContactsContainer {
     width: 100%;
-    height: auto + 10vh;
 
     display: flex;
     flex-direction: column;
@@ -72,7 +86,7 @@ h1, h2 {
 
 .background {
     width: 100%;
-    height: 90vh;
+    height: 40vh;
     display: flex;
 }
 
@@ -88,6 +102,7 @@ h1, h2 {
 #contactsBackground {
     display: flex;
     object-fit: cover;
+    width: 100%;
 }
 
 .mainTextDiv {    
@@ -96,7 +111,7 @@ h1, h2 {
     color: white;
     
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);    
 
@@ -154,20 +169,28 @@ h1, h2 {
 .phoneEmail img{
     width: 50px;
     height: 50px;
+
+    filter: invert(60%) sepia(14%) saturate(13%) hue-rotate(95deg) brightness(94%) contrast(84%);
 }
 
 .phoneDiv {
     display: flex;
     width: 50%;
+    align-items: center;
 }
 
 .emailDiv {
     display: flex;
     width: 50%;
+    align-items: center;
 }
 
 #contacts p {
     margin-left: 1vh;
+    font-size: 2vh;
+    font-weight: 500;
+
+    color: #919191;
 }
 
 /* Contacts form */
@@ -175,7 +198,6 @@ h1, h2 {
 .onlineForm {
     width: 48%;
     float: right;
-    height: 50vh;
 }
 
 #onlineForm {
