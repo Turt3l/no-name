@@ -20,10 +20,10 @@ export default function ContactsPage() {
                 <div className="accordionDropdown">
                     <div className="accordionMain">
                         <h2>Frequently asked questions(FaQ)</h2>
-                        <Accordion title="Section 1" content="Content for section 1"/>
-                        <Accordion title="Section 2" content="Content for section 2"/>
-                        <Accordion title="Section 3" content="Content for section 3"/>
-                        <Accordion title="Section 4" content="Content for section 4"/>
+                        <Accordion title="Section 1" content="Content for sectLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.ion 1"/>
+                        <Accordion title="Section 2" content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."/>
+                        <Accordion title="Section 3" content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."/>
+                        <Accordion title="Section 4" content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."/>
                         <div className="phoneEmail">
                             <div className="phoneDiv" id="contacts">
                                 <img src={phone} alt="" />
