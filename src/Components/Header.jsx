@@ -5,6 +5,7 @@ import twitter from "../Media/Icons Folder/twitter.svg";
 import telephone from "../Media/telephone.svg"
 import questionMark from "../Media/question-mark.svg"
 import money from "../Media/money.svg"
+import logo from "../Media/logoipsum.svg"
 import { useState } from "react";
 export default function Header() {
     const [burgerOpen, setBurgerOpen] = useState(false)
@@ -15,7 +16,7 @@ export default function Header() {
         <div className="Header">
             <div className={`HeaderContainer ${burgerOpen ? "open" : ""}`}>
                 <div className="HeaderMainName">
-                    <Link to="/" spy={true} smooth={true}>$</Link>
+                    <Link to="/" spy={true} smooth={true}><img src={logo} alt="" /></Link>
                 </div>
                 <div className={`headerLinksMobile ${burgerOpen ? "open": ""}`}>
                     <div className="burgerLogo" onClick={handleBurger}>
@@ -29,7 +30,7 @@ export default function Header() {
                         <div className="linkContainer">
                             <div className="link"><img src={telephone}/><Link to="/contacts" spy={true} smooth={true} className="button headerButton">Contact Us<i className="arrowRight"/></Link></div>
                             <div className="link"><img src={money}/><Link to="/services" spy={true} smooth={true} className="button headerButton">Services<i className="arrowRight"/></Link></div>
-                            <div className="link"><img src={questionMark}/><Link to="contacts" spy={true} smooth={true} className="button headerButton">About us<i className="arrowRight"/></Link></div>
+                            <div className="link"><img src={questionMark}/><Link to="/aboutus" spy={true} smooth={true} className="button headerButton">About us<i className="arrowRight"/></Link></div>
                             <div className="socialContainer">
                                 <div className="LogoContainer">
                                     <img src={instagram} alt="" id="socialLogo"/>

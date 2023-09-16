@@ -160,6 +160,9 @@ body {
     display: flex;
     justify-content: right;
 }
+.burgerLogo svg:hover {
+    cursor: pointer;
+}
 .headerButton {
     background-color: transparent;
     color: black;
@@ -434,4 +437,43 @@ h1, h2 {
 .serviceItemList {
     display: flex;
     width: 100%;
+}
+
+
+/* About Us */
+
+.AboutContainer {
+    width: 100%;
+    height: 100vh;
+}
+
+.aboutUsBottomDiv {
+    width: 100%;
+    display: flex;
+    height: 60vh;
+}
+
+.imageLeftSide {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageLeftSide img {
+    width: 70%;
+}
+
+.textRightSide {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.textRightSide p {
+    font-size: 2.5vh;
+    font-weight: 500;
+    width: 80%;
 }
