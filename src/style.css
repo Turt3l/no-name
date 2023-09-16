@@ -58,7 +58,7 @@ h1, h2 {
 
 .ContactsContainer {
     width: 100%;
-    height: 100vh;
+    height: auto + 10vh;
 
     display: flex;
     flex-direction: column;
@@ -67,14 +67,22 @@ h1, h2 {
 
 .background {
     width: 100%;
-    height: max-content;
-
+    height: 90vh;
     display: flex;
+}
+
+.filter {
+    background-color: black;
+    opacity: 45%;
+    width: 100%;
+    height: inherit;
+
+    position: absolute;
 }
 
 #contactsBackground {
     width: 100%;
-    position: relative;
+    /* position: relative; */
     display: flex;
 }
 
@@ -104,25 +112,85 @@ h1, h2 {
 .contactInformation {
     width: 100%;
     height: max-content;
-}
+    display: flex;
+} 
 
 /* Accordion Dropdown */
 
 .accordionDropdown {
+    float: left;
+    width: 48%;
+    display: flex;
+    place-content: center;
+}
+
+.accordionMain {
+    margin-right: 4vh;
+    margin-top: 2vh;
+
+    width: 100%;
+    
+    text-align: -webkit-center;
+
+}
+
+.accordionMain h2 {
+    text-align: center;
+    color: black;
+    font-weight: 500;
+    margin-bottom: 1vh;
+}
+
+.phoneEmail {
+    display: flex;
     width: 50%;
-    background-color: #1f1f1f;
+    justify-content: center;
+}
+
+.phoneEmail img{
+    width: 50px;
+    height: 50px;
+}
+
+.phoneDiv {
+    display: flex;
+    width: 50%;
+}
+
+.emailDiv {
+    display: flex;
+    width: 50%;
+}
+
+#contacts p {
+    margin-left: 1vh;
 }
 
 /* Contacts form */
 
 .onlineForm {
-    width: 40%;
+    width: 48%;
+    float: right;
     height: 50vh;
+}
+
+#onlineForm {
+    margin-left: 4vh;
+    margin-top: 2vh;
     text-align: center;
+
+    width: 100%;
+
+}
+
+#onlineForm h2 {
+    font-weight: 500;
+    margin-bottom: 1vh;
 }
 
 #persInf {
-    width: 800px;
+    width: 75%;
+    border-radius: 10px;
 }
 
 .name {
@@ -141,7 +209,6 @@ h1, h2 {
     resize: none;
 }
 
-
 ::placeholder {
     font-size: 1.5vh;
     font-weight: 500;
@@ -152,11 +219,20 @@ h1, h2 {
 }
 
 #submitButton {
-    width: 800px;
+    width: 600px;
     height: 50px;
+    font-size: 2vh;
 
+    margin-top: 2vh;
     background-color: #919191;
     color: white;
+    transition: 300ms ease-in-out;
+    border-radius: 10px;
+}
+
+#submitButton:hover {
+    opacity: 0.8;
+    cursor: pointer;
 }
 
 
