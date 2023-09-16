@@ -12,8 +12,8 @@ export default function ContactsPage() {
                 <div className="filter"></div>
                 <img id="contactsBackground" src={background} alt="contacts page background" />
                 <div className="mainTextDiv">
-                    <h1 id="mainText">Got any questions? Contact us easily!</h1>
-                    <h2 id="secText">You can easily contact us on the platforms listed below</h2>
+                    <h1 className="mainText">Got any questions? Contact us easily!</h1>
+                    <h2 className="secText">You can easily contact us on the platforms listed below</h2>
                 </div>
             </div>
             <div className="contactInformation">

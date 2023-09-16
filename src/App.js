@@ -1,5 +1,6 @@
 import Header from "./Components/Header";
 import ContactsPage from "./Pages/Contacts/Contacts";
+import LandingPage from "./Pages/Landing/Landing";
 import {
   BrowserRouter,
   Routes,
@@ -11,6 +12,7 @@ function App() {
       <BrowserRouter>
       <Header />
         <Routes>
+          <Route path='/' element={<LandingPage/>}/>
           <Route path="/contacts" element={<ContactsPage/>} />
         </Routes>
       </BrowserRouter>

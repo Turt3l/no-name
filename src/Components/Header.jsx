@@ -20,7 +20,7 @@ export default function Header() {
                         </div>    
                     </div>
                 </div>
-                <Link to={"/contacts"} className="ContactButton">
+                <Link to={"/contacts"} className="button ContactButton">
                     Contact Us
                 </Link>
             </div>
