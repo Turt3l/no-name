@@ -8,23 +8,32 @@ body {
     font-family: 'Poppins';
 }
 .HeaderContainer {
-    height: 6vw;
+    height: 100px;
     display: flex;
     width: 100vw;
     background-color: transparent;
     align-items: center;
     font-family: 'Poppins';
-    font-size: 40px;
+    font-size: 50px;
     color: white;
     position: absolute;
     z-index: 1000;
+}
+.HeaderContainer.open {
+    background: linear-gradient(rgba(27,27,27,.5),rgba(27,27,27,.5));
 }
 .HeaderMainName {
     width: 65%;
     justify-content: center;
     padding: 0 5vw;
+    text-decoration: none;
+}
+.HeaderMainName a {
+    text-decoration: none;
+    color: white;
 }
 .HeaderLinkContainer {
+    
     width: 10%;
 }
 .HeaderLinks {
@@ -34,15 +43,15 @@ body {
 .LogoContainer {
     width: 30px;
     height: 30px;
-    margin: 0 5px;
+    margin: 0 50px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 #socialLogo {
-    filter: invert(100%) sepia(4%) saturate(105%) hue-rotate(31deg) brightness(115%) contrast(100%);
-    width: 25px;
+    filter: invert(0%) sepia(4%) saturate(105%) hue-rotate(31deg) brightness(115%) contrast(100%);
+    width: 100%;
     transition: 250ms ease-in-out;
 }
 
@@ -65,18 +74,127 @@ body {
     background-color: rgb(145, 145, 145);
     color: white;
     padding: 20px 22px;
-    font-size: 20px;
+    font-size: 25px;
     text-decoration: none;
 }
 
 .button:hover {
-    background-color: rgb(122, 122, 122);
     cursor: pointer;
+    background-color: rgb(123, 123, 123);;
 }
 
 
+.line {
+    fill: none;
+    stroke: white;
+    stroke-width: 6;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+      stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+}
+.line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 6;
+}
+.line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+}
+.headerLinksMobile.open .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+}
+.headerLinksMobile.open .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 6;
+}
+.headerLinksMobile.open .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+}
 
+.headerLinksMobile .linkContainer {
+    background-color:#e3e3e3;
+    position: absolute;
+    height: 0vh;
+    right: 0;
+    overflow-y: hidden;
+}
+.headerLinksMobile {
+    width: 20%;
+}
+.headerLinksMobile.open .linkContainer {
+    display: block;
+    height: calc(100vh - 100px);
+    width: 20vw;
+    transition: all 0.2s linear;
+}
+.headerLinksMobile .link {
+    padding: 25px;
+    position: relative;
+}
+.headerLinksMobile {
+    display: block;
+}
+.burgerContent.open {
+    display: block;
+}
+.burgerContent {
+    display: none;
+}
+.burgerContent.open:not(.linkContainer) {
+    background: linear-gradient(rgba(27,27,27,.5),rgba(27,27,27,.5));
+    height: calc(100vh - 100px);
+    left: 0;
+    top: 100px;
+    position: absolute;
+    width: 100vw;
+}
+.burgerLogo {
+    display: flex;
+    justify-content: right;
+}
+.headerButton {
+    background-color: transparent;
+    color: black;
+}
+.headerButton:hover {
+    text-decoration: underline;
+    background-color: transparent;
+}
 
+.headerButton .arrowRight {
+    margin-right: 25px;
+    position: absolute;
+    display: none;
+    top: 45%;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+}
+
+.headerButton:hover .arrowRight {
+    display: inline-block;
+}
+
+.socialContainer {
+    display: flex;
+    padding-top: 25px;
+}
+
+.linkContainer img {
+    width: 25px;
+    height: 25px;
+}
+.link {
+    display: flex;
+    align-items: center;
+}
 /* Contacts page */
 
 h1, h2 {
@@ -234,7 +352,6 @@ h1, h2 {
 
 #persInf {
     width: 75%;
-    border-radius: 10px;
 }
 
 .name {
@@ -266,7 +383,7 @@ h1, h2 {
     width: 600px;
     height: 50px;
     font-size: 2vh;
-
+    border: none;
     margin-top: 2vh;
     background-color: #919191;
     color: white;
@@ -277,19 +394,8 @@ h1, h2 {
 #submitButton:hover {
     opacity: 0.8;
     cursor: pointer;
+    border: 1px solid;
 }
-
-
-
-/* media querries */
-/* 
-@media  (max-width: 1600px) {
-
-    #mainText {
-        font-size: 2vh;
-    }
-    
-} */
 
 /* Landing page  */
 
@@ -321,4 +427,11 @@ h1, h2 {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
     margin-left: 15px;
+}
+
+/* Services */
+
+.serviceItemList {
+    display: flex;
+    width: 100%;
 }

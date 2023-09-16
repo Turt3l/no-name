@@ -1,0 +1,31 @@
+.serviceItem {
+    width: 33.33%;
+    text-align: center;
+    margin: 50px 25px;
+    border: 1px solid black;
+}
+.serviceItemPrice {
+    font-size: 75px;
+    font-weight: 500;
+    padding: 50px;
+}
+.serviceItemDescription {
+    font-size: 30px;
+}
+.serviceItemButton {
+    padding: 30px;
+}
+.buyButton {
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    border-radius: 25px;
+    background-color: black;
+}
+.discount {
+    font-size: 20px;
+}
+.buyButton:hover {
+    background-color: rgb(23, 23, 23);
+    cursor: pointer;
+}
