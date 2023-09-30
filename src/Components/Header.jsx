@@ -5,7 +5,7 @@ import twitter from "../Media/Icons Folder/twitter.svg";
 import telephone from "../Media/telephone.svg"
 import questionMark from "../Media/question-mark.svg"
 import money from "../Media/money.svg"
-import logo from "../Media/logoipsum.svg"
+import logo from "../Media/logo.png"
 import { useState } from "react";
 export default function Header() {
     const [burgerOpen, setBurgerOpen] = useState(false)
@@ -16,9 +16,9 @@ export default function Header() {
         <div className="Header">
             <div className={`HeaderContainer ${burgerOpen ? "open" : ""}`}>
                 <div className="HeaderMainName">
-                    <Link to="/" spy={true} smooth={true}><img src={logo} alt="" /></Link>
+                    <Link to="/" spy={true} smooth={true}><img src={logo}/></Link>
                 </div>
-                <div className={`headerLinksMobile ${burgerOpen ? "open": ""}`}>
+                {/* <div className={`headerLinksMobile ${burgerOpen ? "open": ""}`}>
                     <div className="burgerLogo" onClick={handleBurger}>
                         <svg width="45" height="45" viewBox="0 0 100 100">
                             <path className="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
@@ -27,7 +27,7 @@ export default function Header() {
                         </svg>
                     </div>
                     <div className={`burgerContent ${burgerOpen ? "open": ""}`}>
-                        <div className="linkContainer">
+                        <div className="linkContainer mobile">
                             <div className="link"><img src={telephone}/><Link to="/contacts" spy={true} smooth={true} className="button headerButton">Contact Us<i className="arrowRight"/></Link></div>
                             <div className="link"><img src={money}/><Link to="/services" spy={true} smooth={true} className="button headerButton">Services<i className="arrowRight"/></Link></div>
                             <div className="link"><img src={questionMark}/><Link to="/aboutus" spy={true} smooth={true} className="button headerButton">About us<i className="arrowRight"/></Link></div>
@@ -44,7 +44,13 @@ export default function Header() {
                             </div>
                         </div>
                     </div>
-                    
+                </div> */}
+                <div className="headerLinks">
+                    <div className="linkContainer">
+                        <div className="link"><Link to="/contacts" spy={true} smooth={true} className="defaultLink">Contact Us</Link></div>
+                        <div className="link"><Link to="/services" spy={true} smooth={true} className="defaultLink">Services</Link></div>
+                        <div className="link"><Link to="/aboutus" spy={true} smooth={true} className="defaultLink">About us</Link></div>
+                    </div>
                 </div>
             </div>
         </div>
