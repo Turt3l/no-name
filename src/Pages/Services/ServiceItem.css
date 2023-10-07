@@ -29,3 +29,17 @@
     background-color: rgb(23, 23, 23);
     cursor: pointer;
 }
+@media only screen and (max-width: 1000px) {
+    .serviceItem {
+        width: 100%;
+    }
+    .serviceItemPrice {
+        font-size: 10vw;
+    }
+    .serviceItemDescription {
+        font-size: 5vw;
+    }
+    .buyButton {
+        font-size: 5vw;
+    }
+}

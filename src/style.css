@@ -85,7 +85,7 @@ body {
 
 .button:hover {
     cursor: pointer;
-    background-color: rgb(123, 123, 123);;
+    background-color: rgb(81, 81, 81);;
 }
 
 
@@ -151,7 +151,7 @@ body {
     position: relative;
 }
 .headerLinksMobile {
-    display: block;
+    display: none;
 }
 .burgerContent.open {
     display: block;
@@ -169,8 +169,8 @@ body {
 }
 .burgerLogo {
     display: flex;
-    justify-content: right;
     height: 100px;
+    justify-content: center;
     align-items: center;
     padding: 50px;
 }
@@ -291,13 +291,12 @@ h1, h2 {
 
 .accordionDropdown {
     float: left;
-    width: 48%;
+    width: 50%;
     display: flex;
     place-content: center;
 }
 
 .accordionMain {
-    margin-right: 4vh;
     margin-top: 2vh;
 
     width: 100%;
@@ -349,12 +348,10 @@ h1, h2 {
 /* Contacts form */
 
 .onlineForm {
-    width: 48%;
-    float: right;
+    width: 50%;
 }
 
 #onlineForm {
-    margin-left: 4vh;
     margin-top: 2vh;
     text-align: center;
 
@@ -397,7 +394,7 @@ h1, h2 {
 }
 
 #submitButton {
-    width: 600px;
+    width: 75%;
     height: 50px;
     font-size: 2vh;
     border: none;
@@ -423,18 +420,18 @@ h1, h2 {
 }
 
 .landingPageButtonContainer {
-    background-color: #919191;
+    background-color: #7a7a7a;
     width: 30%;
     margin-top: 20px;
     padding: 20px;
     color: white;
     font-size: 20px;
     text-decoration: none;
+    border-radius: 25px;
 }
 .landingButton {
     color: white;
     text-decoration: none;
-    padding: 20px;
 }
 .arrowRight {
     border: solid white;
@@ -461,7 +458,6 @@ h1, h2 {
 
 .AboutContainer {
     width: 100%;
-    height: 100vh;
 }
 
 .aboutUsBottomDiv {
@@ -472,7 +468,7 @@ h1, h2 {
 
 .imageLeftSide {
     width: 40%;
-    height: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -490,7 +486,7 @@ h1, h2 {
 }
 
 .textRightSide p {
-    font-size: 2.5vh;
+    font-size: 2vw;
     font-weight: 500;
     width: 80%;
 }
@@ -558,4 +554,139 @@ h1, h2 {
 }
 .nytroLink:hover {
     text-decoration: underline;
+}
+.phoneEmail {
+    flex-wrap: wrap;
+    width: 100%;
+}
+.phoneDiv {
+    width: 100%;
+    place-content: center;
+}
+.emailDiv {
+    width: 100%;
+    place-content: center;
+}
+/* mobile view */
+
+@media only screen and (max-width: 1690px) {
+    .headerLinks {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .mainTextDiv.landing {
+        left: 30vw;
+    }
+    .mainTextDiv {
+        width: 80vw;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .headerLinksMobile {
+        display: block;
+    }
+    .headerLinks {
+        display: none;
+    }
+    .landingPageButtonContainer {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .mainTextDiv.landing {
+        left: 50vw;
+        text-align: -webkit-center;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    .FooterContainer {
+        place-content: center;
+    }
+    .mainText {
+        font-size: 6vw;
+    }
+    .secText {
+        font-size: 3vw;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .serviceItemList {
+        flex-wrap: wrap;
+    }
+    .serviceItem {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .aboutUsBottomDiv {
+        flex-wrap: wrap;
+    }
+    .imageLeftSide {
+        width: 100%;
+    }
+    .textRightSide {
+        width: 100%;
+    }
+    .textRightSide p {
+        font-size: 3vw;
+    }
+}
+@media only screen and (max-width:800px) {
+    .HeaderMainName img {
+        padding: 10px;
+
+    }
+    .FooterContainer {
+        flex-wrap: wrap;
+    }
+    .phoneEmail img {
+        width: 5vw;
+    }
+
+    .FooterLinkContainer {
+        padding: 10px;
+        width: 100%;
+    }
+    .link {
+        place-content: center;
+    }
+    .FooterHeader {
+        text-align: center;
+    }
+    .HeaderMainName {
+        width: 60%;
+    }
+    .headerLinksMobile {
+        width: 40%;
+    }
+    .contactInformation {
+        flex-wrap: wrap;
+    }
+    .accordionDropdown {
+        width: 100%;
+    }
+    .onlineForm {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .landingPageButtonContainer {
+        padding: 10px;
+        font-size: 10px;
+    }
+    .arrowRight {
+        display: none;
+    }
+    .HeaderMainName img {
+        height: 8vh;
+    }
+}
+@media only screen and (max-width: 340px) {
+    .headerLinksMobile {
+        width: 50%;
+    }
 }
