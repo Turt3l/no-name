@@ -8,15 +8,14 @@ import email from "../../Media/envelope.svg";
 export default function ContactsPage() {
     return (
         <div className="ContactsContainer">
-            <div className="background">
+            <div className="background" id="contactsBG">
                 <div className="filter"></div>
                 <img id="contactsBackground" src={background} alt="contacts page background" />
                 <div className="mainTextDiv">
                     <h1 className="mainText">Got any questions? Contact us easily!</h1>
                     <h2 className="secText">You can easily contact us on the platforms listed below</h2>
                 </div>
-            </div>
-            <div className="contactInformation">
+                <div className="contactInformation">
                 <div className="accordionDropdown">
                     <div className="accordionMain">
                         <h2>Frequently asked questions(FaQ)</h2>
@@ -45,7 +44,9 @@ export default function ContactsPage() {
                         <button id="submitButton" type="submit">Submit</button>
                     </form>
                 </div>
+                </div>
             </div>
+            
         </div>
     )
 }

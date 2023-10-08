@@ -5,23 +5,24 @@ export default function Services() {
         <div className="servicePageContainer">
             <div className="servicePageBackgroundContainer">
                 <div className="servicePageBackground">
-                    <div className="background">
+                    <div className="background" id="backgroundPrivacy">
                     <div className="filter"></div>
                     <img id="contactsBackground" src={background} alt="contacts page background" />
                     <div className="mainTextDiv">
                         <h1 className="mainText">Services</h1>
                         <h2 className="secText">Our services</h2>
                     </div>
-            </div>
+                    </div>
                 </div>
             </div>
-            <div className="serviceItemListContainer">
-                <div className="serviceItemList">
-                    <ServiceItems price={25} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"}/>
-                    <ServiceItems price={50} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"}/>
-                    <ServiceItems price={125} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"}/>
+                <div className="serviceItemListContainer">
+                    <div className="serviceItemList">
+                        <ServiceItems price={25} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"}/>
+                        <ServiceItems price={50} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"}/>
+                        <ServiceItems price={125} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"}/>
+                    </div>
                 </div>
-            </div>
+            
         </div>
     )
 }
