@@ -8,7 +8,7 @@ import email from "../../Media/envelope.svg";
 export default function ContactsPage() {
     return (
         <div className="ContactsContainer">
-            <div className="background">
+            <div className="background contactUs">
                 <div className="filter"></div>
                 <img id="contactsBackground" src={background} alt="contacts page background" />
                 <div className="mainTextDiv">

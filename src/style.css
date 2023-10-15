@@ -41,6 +41,9 @@ body {
     
     width: 10%;
 }
+.HeaderContainer.open .HeaderMainName img {
+    filter: invert(0);
+}
 .HeaderLinks {
     display: flex;
     justify-content: center;
@@ -173,6 +176,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 50px;
+    float: right;
 }
 .burgerLogo svg:hover {
     cursor: pointer;
@@ -232,7 +236,9 @@ h1, h2 {
     height: 40vh;
     display: flex;
 }
-
+.background.contactUs {
+    height: 40vh;
+}
 .background.landing {
     width: 100%;
     height: 100vh;
@@ -494,7 +500,7 @@ h1, h2 {
 }
 
 .textRightSide p {
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-weight: 500;
     width: 80%;
 }
@@ -575,6 +581,29 @@ h1, h2 {
     width: 100%;
     place-content: center;
 }
+#payment-form {
+    color: black;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 30vh;
+    width: 40%;
+    padding: 50px;
+    border: 1px black solid;
+    backdrop-filter: blur(5px);
+}
+#payment-form button {
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: 15px;
+    border-radius: 25px;
+    width: 100%;
+    height: 40px;
+    margin-top: 30px;
+}
 /* mobile view */
 
 @media only screen and (max-width: 1690px) {
@@ -602,7 +631,22 @@ h1, h2 {
     .landingPageButtonContainer {
         width: 40%;
     }
+    .HeaderMainName {
+        width: 50%;
+    }
+    .headerLinksMobile.open .linkContainer.mobile {
+        width: 50vw;
+    }
+    .headerLinksMobile {
+        width: 50vw;
+    }
+
+    .burgerLogo {
+        padding: 100px;
+    }
 }
+
+
 
 @media only screen and (max-width: 1250px) {
     .mainTextDiv.landing {
@@ -665,12 +709,6 @@ h1, h2 {
     .FooterHeader {
         text-align: center;
     }
-    .HeaderMainName {
-        width: 60%;
-    }
-    .headerLinksMobile {
-        width: 40%;
-    }
     .contactInformation {
         flex-wrap: wrap;
     }
@@ -692,9 +730,17 @@ h1, h2 {
     .HeaderMainName img {
         height: 8vh;
     }
-}
-@media only screen and (max-width: 340px) {
+    .HeaderMainName {
+        width: 0%;
+    }
+    .headerLinksMobile.open .linkContainer.mobile {
+        width: 100vw;
+
+    }
     .headerLinksMobile {
-        width: 50%;
+        width: 100vw;
+    }
+    .burgerLogo {
+        padding: 50px;
     }
 }
