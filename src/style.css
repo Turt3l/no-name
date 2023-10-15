@@ -33,9 +33,11 @@ body {
 }
 .HeaderMainName img {
     width: auto;
-    height: 100px;
+    height: 80px;
     filter: invert(1);
     padding: 60px;
+    left: 10%;
+    position: relative;
 }
 .HeaderLinkContainer {
     
@@ -211,6 +213,8 @@ body {
 .link {
     display: flex;
     align-items: center;
+    padding-left: 1vh;
+    float: left;
 }
 /* Contacts page */
 
@@ -261,7 +265,6 @@ h1, h2 {
     
     position: absolute;
     top: 20%;
-    left: 25%;   
 
     text-align: center;
 }
@@ -282,14 +285,13 @@ h1, h2 {
 
 .contactInformation {
     width: 80%;
-    height: 68vh;
+    padding: 2vh;
     position: absolute;
     display: flex;
-    transform: translateY(42%);
+    transform: translateY(60%);
     border: 2px solid;
     border-radius: 10px;
     backdrop-filter: blur(2px);
-    left: 10%;
     top: 10%;
 }
 
@@ -303,9 +305,10 @@ h1, h2 {
 }
 
 .accordionMain {
-    margin-top: 2vh;
+    overflow: hidden;
 
     width: 100%;
+    max-height: 50vh;
     
     text-align: -webkit-center;
 
@@ -359,7 +362,6 @@ h1, h2 {
 }
 
 #onlineForm {
-    margin-top: 2vh;
     text-align: center;
 
     width: 100%;
@@ -386,7 +388,6 @@ h1, h2 {
 
 .message {
     margin-top: 1vh;
-    height: 285px;
 
     resize: none;
 }
@@ -397,7 +398,6 @@ h1, h2 {
 
     font-family: 'Poppins';
 
-    padding: 1vh;
 }
 
 #submitButton {
@@ -463,7 +463,7 @@ h1, h2 {
 
 .serviceItemListContainer {
     position: absolute;
-    top: 30%;
+    top: 35%;
     text-align: -webkit-center;
 }
 
@@ -476,16 +476,15 @@ h1, h2 {
     width: 100%;
 }
 
-.aboutUsBottomDiv {
+.aboutUsBottomDiv {    
     width: 80%;
     display: flex;
     height: 60vh;
     position: absolute;
-    transform: translateY(50%);
+    top: 36%;
     left: 10%;
     border: 2px solid black;
     border-radius: 10px;
-    -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     color: white;
 }
@@ -538,6 +537,7 @@ h1, h2 {
 }
 .Footer {
     background-color: black;
+    padding-top: 2vh;
 }
 .FooterSocialContainer .socialContainer {
     filter: invert(1);
@@ -547,16 +547,17 @@ h1, h2 {
     margin: 10px;
 }
 .FooterLogoAndSocial {
-    width: 25%;
+    width: 20%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 .FooterContainer {
     display: flex;
+    justify-content: center;
 }
 .FooterLinkContainer {
-    width: 25%;
+    width: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -635,6 +636,24 @@ h1, h2 {
     #contactsBG {
         height: 170vh;
         justify-content: center;
+    }
+
+    .onlineForm {
+        width: 100%;
+        height: auto;
+        max-height: 80vh;
+    }
+
+    .contactInformation {
+        max-height: 150vh;
+    }
+
+    .accordionMain {
+        margin-top: 2vh;
+        width: 100%;
+        max-height: 52vh;
+        overflow: hidden;
+        text-align: -webkit-center;
     }
 }
 @media only screen and (max-width: 1100px) {
