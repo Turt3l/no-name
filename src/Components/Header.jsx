@@ -31,17 +31,6 @@ export default function Header() {
                             <div className="link"><img src={telephone}/><Link to="/contacts" spy={true} smooth={true} className="button headerButton">Contact Us<i className="arrowRight"/></Link></div>
                             <div className="link"><img src={money}/><Link to="/services" spy={true} smooth={true} className="button headerButton">Services<i className="arrowRight"/></Link></div>
                             <div className="link"><img src={questionMark}/><Link to="/aboutus" spy={true} smooth={true} className="button headerButton">About us<i className="arrowRight"/></Link></div>
-                            <div className="socialContainer">
-                                <div className="LogoContainer">
-                                    <img src={instagram} alt="" id="socialLogo"/>
-                                </div>
-                                <div className="LogoContainer">
-                                    <img src={facebook} alt="" id="socialLogo"/>
-                                </div>
-                                <div className="LogoContainer">
-                                    <img src={twitter} alt="" id="socialLogo"/>
-                                </div>    
-                            </div>
                         </div>
                     </div>
                 </div>

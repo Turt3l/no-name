@@ -8,6 +8,11 @@ export default function Footer() {
         <div className="Footer">
             <div className="FooterContainer">
                 <div className="FooterLogoAndSocial">
+                    <div className="FooterLogoContainer">
+                        <div className="FooterLogo">
+                            <img src={logo}/>
+                        </div>
+                    </div>
                     <div className="FooterSocialContainer">
                         <div className="socialContainer">
                             <div className="LogoContainer">
@@ -24,12 +29,26 @@ export default function Footer() {
                 </div>
                 <div className="FooterLinkContainer">
                     <div className="FooterLink">
-                            <div className="link"><Link to="/contacts" spy={true} smooth={true} className="defaultLink">Contact Us</Link></div>
-                            <div className="link"><Link to="/services" spy={true} smooth={true} className="defaultLink">Services</Link></div>
-                            <div className="link"><Link to="/aboutus" spy={true} smooth={true} className="defaultLink">About us</Link></div>
-                            <div className="link"><Link to="/privacy" spy={true} smooth={true} className="defaultLink">Privacy policy</Link></div>
+                        <div className="FooterHeader">
+                            <h2>
+                                Links
+                            </h2>
                         </div>
+                        <div className="link"><Link to="/contacts" spy={true} smooth={true} className="defaultLink">Contact Us</Link></div>
+                        <div className="link"><Link to="/services" spy={true} smooth={true} className="defaultLink">Services</Link></div>
+                        <div className="link"><Link to="/aboutus" spy={true} smooth={true} className="defaultLink">About us</Link></div>
                     </div>
+                </div>
+                <div className="FooterLinkContainer">
+                    <div className="privacyPolicyContainer">
+                        <div className="FooterHeader">
+                            <h2>
+                                Privacy policy
+                            </h2>
+                        </div>
+                        <div className="link"><Link to="/privacy" spy={true} smooth={true} className="defaultLink">Privacy policy</Link></div>
+                    </div>
+                </div>
             </div>
             <div className="nytrobyte">
                 <div className="createdBy">
