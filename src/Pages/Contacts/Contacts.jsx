@@ -4,6 +4,7 @@ import "../../style.css";
 import background from "../../Media/background.png";
 import phone from "../../Media/telephone.svg";
 import email from "../../Media/envelope.svg";
+import AccordionMenu from "../../Components/AccordionMenu";
 
 export default function ContactsPage() {
     return (
@@ -17,7 +18,7 @@ export default function ContactsPage() {
                 </div>
                 <div className="contactInformation">
                 <div className="accordionDropdown">
-                    <div className="accordionMain">
+                    {/* <div className="accordionMain">
                         <h2>Frequently asked questions(FaQ)</h2>
                         <Accordion title="Section 1" content="Content for sectLorem Ipsum is simply dummy text of the printing and typesetting industry."/>
                         <Accordion title="Section 2" content="Lorem Ipsum is simply dummy text of the printing and typesetting industry."/>
@@ -32,7 +33,8 @@ export default function ContactsPage() {
                                 <p>john@demostore.com</p>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
+                    <AccordionMenu />
                 </div>
                 <div className="onlineForm">
                     <form id="onlineForm" action="">
