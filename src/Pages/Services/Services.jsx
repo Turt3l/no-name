@@ -5,7 +5,7 @@ export default function Services() {
         <div className="servicePageContainer">
             <div className="servicePageBackgroundContainer">
                 <div className="servicePageBackground">
-                    <div className="background contactUs">
+                    <div className="background services">
                     <div className="filter"></div>
                     <img id="contactsBackground" src={background} alt="contacts page background" />
                     <div className="mainTextDiv">

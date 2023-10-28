@@ -3,7 +3,7 @@ import AccordionItem from './AccordionItem';
 import "./Accordion.css"
 
 const AccordionMenu = () => {
-    const [currentlyActive, setCurrentlyActive] = useState(1);
+    const [currentlyActive, setCurrentlyActive] = useState(0);
 
     const handleAccoridonClick = (newActiveAccordion) => {
         setCurrentlyActive(newActiveAccordion === currentlyActive ? null : newActiveAccordion);
