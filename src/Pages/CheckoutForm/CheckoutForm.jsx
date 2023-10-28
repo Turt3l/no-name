@@ -42,10 +42,23 @@ export default function CheckoutForm() {
       }, [stripe]);
       const handleSubmit = async (e) => {
         e.preventDefault();
+
+        const {userInfoError} = await fetch('/data/userInfo', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ userEmail: email })
+        })
+        if (userInfoError) {
+          setMessage(error.message);
+        } else {
+          setMessage("An unexpected error occurred.");
+        }
+
         if (!stripe || !elements) {
           return;
         }
-        setIsLoading(true);
         const { error } = await stripe.confirmPayment({
           elements,
           confirmParams: {
@@ -77,10 +90,12 @@ export default function CheckoutForm() {
                 <div className="filter"/>
                 <img src={background} className="backgroundImage" alt="landingPageBackgroundImage"/>
             <form id="payment-form" onSubmit={handleSubmit}>
-                <LinkAuthenticationElement
-                    id="link-authentication-element"
-                    onChange={(e) => setEmail(e.target?.value?.email)}
-                />
+            <LinkAuthenticationElement
+            id="link-authentication-element"
+            onChange={(e) => {
+              setEmail(e.value.email);
+            }}
+          />
                 <PaymentElement id="payment-element" options={paymentElementOptions} />
                 <button disabled={isLoading || !stripe || !elements} id="submit">
                     <span id="button-text">

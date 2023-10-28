@@ -1,5 +1,18 @@
+import { Link } from "react-router-dom"
 import "./ServiceItem.css"
 export default function ServiceItems(props) {
+
+    const onServiceItemClick = () => {
+        fetch('/data/items', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ itemId: props.itemId, price: props.price })
+          })
+
+    };
+
     return (
         <div className="serviceItem">
             <div className="serviceItemPrice">
@@ -11,7 +24,7 @@ export default function ServiceItems(props) {
             </div>
             <div className="serviceItemButton">
                 <div className="buyButton">
-                    Buy
+                    <Link to="/checkout" spy={true} smooth={true} onClick={onServiceItemClick}>Buy</Link>
                 </div>
             </div>
         </div>
