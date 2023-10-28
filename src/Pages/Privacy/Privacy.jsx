@@ -6,7 +6,7 @@ import "./Privacy.css"
 export default function PrivacyPage() {
     return (
         <div className="privacyContainer">
-            <div className="background">
+            <div className="background privacy">
                 <div className="filter"></div>
                 <img id="contactsBackground" src={background} alt="privacy page background" />
                 <div className="mainTextDiv">
