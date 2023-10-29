@@ -11,7 +11,7 @@ import PaymentPage from "./Pages/Payment/Payment";
 import PaymentComplete from "./Pages/Payment/PaymentComplete";
 
 function App() {
-  return (
+    return (
     <div className="App">
       <BrowserRouter>
         <Header />
@@ -21,14 +21,13 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/aboutus" element={<AboutUsPage />} />
           <Route path="/privacy" element={<PrivacyPage />} />
-          {/* <Route path="/checkout" element={paymentElement(options, stripePromise, clientSecret)}/> */}
+          <Route path="/checkout" element={<Checkout />} />
           <Route path="/payment" element={<PaymentPage />} />
-          <Route path="/paymentcompleted" element={<PaymentComplete />} />
+          <Route path="/paymentsuccesful" element={<PaymentComplete />} />
         </Routes>
         <Footer />
       </BrowserRouter>
     </div>
   );
 }
-
 export default App;

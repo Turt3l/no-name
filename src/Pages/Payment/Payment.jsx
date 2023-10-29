@@ -2,16 +2,10 @@ import React from 'react';
 import "./Payment.css";
 import background from "../../Media/background.png"
 import "../../style.css"
-import { CardCvcElement, Elements } from '@stripe/react-stripe-js';
-import { loadStripe } from '@stripe/stripe-js';
-import CheckoutForm from '../CheckoutForm/CheckoutForm';
+import { Link } from 'react-router-dom';
 
-// const stripePromise = loadStripe('pk_test_51EAiktBEaidOzrZmREXHQxQAD1jHeOXWgXKRijDq2poLuErrHrVs3Mzs2W93F3WZPLzqXIX3xxcwhyjRRShxtBqa00ZpUCXL3h');
 
 export default function PaymentPage() {
-    // const options = {
-    //     clientSecret: '{{CLIENT_SECRET}}',
-    //   };
     return (
         <div className="PaymentPage">
             <div className="background payment">
@@ -22,12 +16,11 @@ export default function PaymentPage() {
                 <h1>Checkout</h1>
             </div>
             <div className="PaymentFormContainer">
-                <form className='PaymentForm' action="/create-checkout-session" method="POST">
+                <form className='PaymentForm'>
+                    <Link to="/paymentsuccesful" spy={true} smooth={true}>
                     <button id='CheckoutButton' type="submit">Checkout</button>
+                    </Link>
                 </form>
-                {/* <Elements stripe={stripePromise} options={options}>
-                    <CheckoutForm />
-                </Elements> */}
             </div>
         </div>
     )
