@@ -2,6 +2,7 @@ import React from 'react';
 import "./Payment.css";
 import background from "../../Media/background.png";
 import "../../style.css"
+import { Link } from 'react-router-dom';
 
 export default function PaymentComplete() {
     return (
@@ -13,7 +14,7 @@ export default function PaymentComplete() {
             <div className="PaymentCompletedContainer">
                 <div className="PaymentCompleteText">
                     <h1>Payment made successfully</h1>
-                    <h2>Returning to the main page...</h2>
+                    <Link to="/" spy={true} smooth={true}><button id="homebutton">Return to home page</button></Link>
                 </div>
             </div>
         </div>
