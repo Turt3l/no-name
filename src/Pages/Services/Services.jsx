@@ -12,7 +12,7 @@ export default function Services() {
                         <h1 className="mainText">Services</h1>
                         <h2 className="secText">Our services</h2>
                     </div>
-            </div>
+                    </div>
                 </div>
             </div>
             <div className="serviceItemListContainer">

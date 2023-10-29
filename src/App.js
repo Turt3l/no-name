@@ -10,6 +10,8 @@ import { useEffect, useState } from "react";
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
 import CheckoutForm from "./Pages/CheckoutForm/CheckoutForm";
+import PaymentPage from "./Pages/Payment/Payment";
+import PaymentComplete from "./Pages/Payment/PaymentComplete";
 
 const stripePromise = loadStripe("pk_test_51O1PxaJIFOQgEMQO0IicrZDsYNs1Py5uL3eSU3k8I9ZctGWm8qE4gwr2K1OOHx4GEBoIDKHZKUGW3qGtdVkalTjg002WLSfUiQ");
 
@@ -66,6 +68,8 @@ function App() {
           <Route path="/aboutus" element={<AboutUsPage />} />
           <Route path="/privacy" element={<PrivacyPage />} />
           <Route path="/checkout" element={paymentElement(options, stripePromise, clientSecret)}/>
+          <Route path="/payment" element={<PaymentPage />} />
+          <Route path="/paymentcompleted" element={<PaymentComplete />} />
         </Routes>
         <Footer />
       </BrowserRouter>
