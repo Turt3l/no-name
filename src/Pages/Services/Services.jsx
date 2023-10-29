@@ -15,13 +15,14 @@ export default function Services() {
                     </div>
                 </div>
             </div>
-            <div className="serviceItemListContainer">
-                <div className="serviceItemList">
-                    <ServiceItems price={25} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"}/>
-                    <ServiceItems price={50} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"}/>
-                    <ServiceItems price={125} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"}/>
+                <div className="serviceItemListContainer">
+                    <div className="serviceItemList"> 
+                        <ServiceItems price={25} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"} itemId={1}/>
+                        <ServiceItems price={50} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"} itemId={2}/>
+                        <ServiceItems price={125} description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit"} itemId={3}/>
+                    </div>
                 </div>
-            </div>
+            
         </div>
     )
 }
